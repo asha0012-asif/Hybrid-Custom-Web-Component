@@ -1,0 +1,71 @@
+:root {
+    --color-normal: hsla(0, 0%, 0%, 0.533);
+    --color-limit: hsl(0, 95%, 48%);
+    --color-warning: hsl(60, 95%, 48%);
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        45deg,
+        hsl(240, 15%, 58%),
+        hsl(240, 55%, 58%),
+        hsl(240, 95%, 58%)
+    );
+}
+
+form {
+    width: 30rem;
+
+    padding: 2.5rem;
+    border: 0.0325rem solid var(--color-normal);
+    border-radius: 0.5rem;
+
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0.25rem 0.25rem 1rem #0004;
+
+    display: grid;
+    gap: 0.5rem;
+
+    label {
+        font-weight: 600;
+    }
+
+    button {
+        cursor: pointer;
+
+        padding: 0.5rem;
+        border: 0.0325rem solid hsl(150, 95%, 38%);
+        border-radius: 0.25rem;
+        margin-top: 1rem;
+
+        background-color: hsl(150, 95%, 38%);
+        color: #fff;
+
+        &:where(:hover, :focus-visible) {
+            background-color: hsl(150, 75%, 38%);
+            border-color: hsl(150, 75%, 38%);
+        }
+    }
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.formBox {
+    display: grid;
+    gap: 0.25rem;
+}
+
+@media only screen and (max-width: 45rem) {
+    form {
+        width: 85vw;
+    }
+}
