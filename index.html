@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Web Component</title>
+
+        <link rel="stylesheet" href="./css/css-reset.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+
+    <body>
+        <form action="">
+            <div class="formBox">
+                <label for="fullname">Full Name</label>
+                <capped-input name="fullname" id="fullname" limit="60" placeholder="Full name" />
+            </div>
+
+            <div class="formBox">
+                <label for="email">Email</label>
+                <capped-input name="email" id="email" limit="60" placeholder="Email" />
+            </div>
+
+            <div class="formBox">
+                <label for="comments">Comments</label>
+                <max-textarea name="comments" id="comments" cols="30" rows="10"></max-textarea>
+            </div>
+
+        </form>
+
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
+
